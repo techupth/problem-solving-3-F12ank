@@ -2,6 +2,15 @@
 
 const lengthOfLastWord = function (s) {
   //Start coding here
+
+  let newWord = s.trim().split(" ");
+  console.log(newWord);
+  let reverseIndex = newWord.reverse();
+  console.log(reverseIndex);
+  let selectWord = reverseIndex[0];
+  console.log(selectWord);
+
+  return selectWord.length;
 };
 
 const result1 = lengthOfLastWord("Hello World");
